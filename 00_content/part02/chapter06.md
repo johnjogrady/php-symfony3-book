@@ -29,6 +29,11 @@ Let's add a new route and controller method to our `StudentController` class. Th
     }
 ```
 
+Update the using statements on the StudentController to add in the following extra Use
+
+use Symfony\Component\HttpFoundation\Response;
+use AppBundle\Entity\Student;
+
 The above now means we can create new records in our database via this new route. So to create a record with name `matt` just visit this URL with your browser:
 
 ```
